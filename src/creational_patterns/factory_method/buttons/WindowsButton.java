@@ -28,7 +28,6 @@ public class WindowsButton implements Button {
 
         frame.setSize(320, 200);
         frame.setVisible(true);
-        onClick();
     }
 
     public void onClick() {
@@ -36,6 +35,7 @@ public class WindowsButton implements Button {
         button.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 frame.setVisible(false);
+                System.out.println("点击了按钮!");
                 System.exit(0);
             }
         });
